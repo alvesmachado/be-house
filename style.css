@@ -212,3 +212,119 @@ header nav {
     max-height: 320px;
     width: 33.333333333333333333333333%;
 }
+
+.section-3 {
+    background-color: #0f1416;
+    height: 320px;
+    position: relative;
+}
+
+.section-3-center {
+    display: flex;
+    max-width: 900px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-3-col {
+    margin: 32px;
+    text-align: center;
+    min-width: 280px;
+}
+
+.social-buttons {
+    margin-top: 16px;
+    text-align: center;
+}
+
+a:hover .social-img{
+    transition: 0.3s;
+    transform: scale(0.900);
+}
+
+a:active .social-img{
+    transition: 0.2s;
+    filter: brightness(150%);
+}
+
+
+.social-img {
+    margin: 8px;
+    width: 32px;
+    border-radius: 16px;
+}
+
+.section-3-email {
+    color: var(--color-grey);
+    margin-bottom: 8px;
+
+}
+
+.section-3-email:hover {
+    color: var(--color-pink);
+
+}
+
+.section-3-email::before {
+    color: var(--color-pink);
+    font-weight: bold;
+    content: '\040\00A0\00A0';
+}
+
+
+.section-3-tel {
+    color: var(--color-grey);
+    text-decoration: none;
+}
+
+.section-3-tel::before {
+    color: var(--color-pink);
+    font-weight: bold;
+    content: '\260E\00A0\00A0';
+}
+
+.section-3-tel:hover {
+    color: var(--color-pink);
+}
+
+.section-3-logo {
+    width: 128px;
+    height: 128px;
+    border-radius: 64px;
+}
+
+.section-3 hr {
+    border-color: #0f1416;
+}
+
+footer {
+    background-color: black;
+}
+
+footer p {
+    color: var(--color-grey);
+    padding: 32px 0px;
+}
+
+
+footer a {
+    text-decoration: none;
+    color: var(--color-pink);
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: var(--color-blue);
+}
+
+footer a:active {
+    color: var(--color-grey);
+}
+
+.footer-center {
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
