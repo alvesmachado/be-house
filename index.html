@@ -1,81 +1,146 @@
 <!DOCTYPE html>
-<html lang="pr-br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Be House - Estética e Massagens!</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="Imagens/logo-behouse-circle.png" type="image/x-icon">
+    <title>Teste de Input e Media</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="shortcut icon" href="imagens/bh-icon-i.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheets/all.css" media="all">
+    <link rel="stylesheet" href="stylesheets/media.css">
 </head>
 <body>
     <header>
-        <div class="header-div">
-            <a href="index.html"><img src="Imagens/logo-behouse.jpg" alt="logo" class="logo-header"></a>
-            <nav>
-                <ul class="nav-list">
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="https://wa.me/5521984263040?text=Oi%2C%20Be%20House%21%20Desejo%20fazer%20um%20agendamento%21" target="_blank">Agendar</a></li>
-                </ul>
-            </nav>
+        <i class="material-symbols-outlined menu-button" onclick="clickMenu()">menu</i>
+        <div class="header-right">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img src="imagens/bh-icon-i.png" alt="Be House">
+                </a>
+            </div>
+            <div class="header-agendar btn-click">
+                <a href="#">Franqueado</a>
+            </div>
         </div>
     </header>
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <div class="hero-center">
-                    <h1>5 anos de serviços e excelência</h1>
-                    <p>A arte de ser moderna e confortavel</p>
-                    <a href="https://wa.me/5521984263040?text=Oi%2C%20Be%20House%21%20Desejo%20fazer%20um%20agendamento%21" class="link-button" target="_blank">Agendar Agora</a>
+    <nav id="menu_itens">
+        <div class="menu_m" id="f_menu_m">
+            <div class="header-top-menu">
+                <i class="material-symbols-outlined menu-button" onclick="clickMenu()">menu</i>
+                <div class="header-right">
+                    <div class="header-logo">
+                        <a href="index.html">
+                            <img src="imagens/bh-icon-i.png" alt="Be House">
+                        </a>
+                    </div>
                 </div>
+                
             </div>
-        </section>
+            <ul class="list-menu-m">
+                <li>
+                    <a href="#" class="menu-m-op">
+                        <i class="material-symbols-outlined">home</i>
+                        <p>Inicial</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="material-symbols-outlined">work</i>
+                        <p>Serviços</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="material-symbols-outlined">groups</i>
+                        <p>Sobre nós</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="material-symbols-outlined">call</i>
+                        <p>Contatos</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="material-symbols-outlined">calendar_today</i>
+                        <p>Agendar</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
         <section class="section-1">
-            <div class="section-1-dark">
-                <div class="section-1-center">
-                    <img src="Imagens/foto3-behouse.jpg" alt="Procedimentos" class="section-1-img">
-                    <article>
-                        <h1>QUEM SOMOS?</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores tenetur recusandae beatae? Ab in culpa atque dolorem accusantium itaque? Ipsum incidunt nam in nisi doloremque, dolorum libero accusantium fuga vel.</p>
-                        <a href="#" class="link-button">SAIBA MAIS</a>
-                    </article>
+            <div class="bg-dark">
+                <div class="section-1-content center">
+                    <h1 class="upper">Bem-estar que transforma</h1>
+                    <h2 class="upper">Cuidar de si é um ato de amor. Viva o equilíbrio entre corpo, mente e alma.</h2>
+                    <div class="btn-click">
+                        <a href="#" class="upper btn-bg-b">Reserve sua experiência</a>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="section-2">
-            <div class="section-2-dark">
-                <h1>Estilo, serviços e excelência</h1>
-                <p>Explore nossa galeria e mergulhe no universo da BE House! Aqui, cada imagem conta um pouco da nossa história, do cuidado em cada detalhe e da satisfação dos nossos clientes.</p>
-                <div class="section-2-galeria">
-                    <img src="Imagens/foto2-behouse.jpg" alt="">
-                    <img src="Imagens/foto4-behouse.jpg" alt="">
-                    <img src="Imagens/foto5-behouse.jpg" alt="">
+            <div class="section-2-content center-bot">
+                <div class="center">
+                    <h1 class="upper">Sobre nós</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit assumenda saepe vel, ipsam, repellat enim consectetur dicta cupiditate itaque aliquid quisquam labore porro omnis facere nemo atque error odio libero.</p>
+                    <div class="btn-click">
+                        <a href="#" class="upper btn-bg-b">Saiba Mais</a>
+                    </div>
                 </div>
-                <a href="https://wa.me/5521984263040?text=Oi%2C%20Be%20House%21%20Desejo%20fazer%20um%20agendamento%21" class="link-button" target="_blank">Agendar Agora</a>
             </div>
         </section>
         <section class="section-3">
-            <div class="section-3-center">
-                <div class="section-3-col">
-                    <p class="section-3-email">behouseestetica@gmail.com</p>
-                    <a href="https://wa.me/5521984263040?text=Oi%2C%20Be%20House%21%20Desejo%20fazer%20um%20agendamento%21" class="section-3-tel" target="_blank">(21) 98426-3040</a>
-                    <div class="social-buttons">
-                        <a href="https://www.facebook.com/behouseestetica/"  target="_blank"><img src="Imagens/logo-facebook.jpg" alt="" class="social-img"></a>
-                        <a href="#"  target="_blank"><img src="Imagens/logo-instagram.jpg" alt="" class="social-img"></a>
-                        <a href="https://github.com/alvesmachado"  target="_blank"><img src="Imagens/logo-github.jpg" alt="" class="social-img"></a>
+            <div class="bg-dark">
+                <div class="section-3-content center">
+                    <h1 class="upper">Nossos serviços</h1>
+                    <div class="section-3-categorias">
+                        <ul>
+                            <h2>Massagens terapêuticas</h2>
+                            <li>Relaxante</li>
+                            <li>Modeladora</li>
+                            <li>Drenagem</li>
+                            <li>Pedras quentes</li>
+                        </ul>
+
+                        <ul>
+                            <h2>Estética facial e corporal</h2>
+                            <li>Limpeza de pele</li>
+                            <li>Peeling</li>
+                            <li>Criolipólise</li>
+                        </ul>
+
+                        <ul>
+                            <h2>Bem-estar e spa</h2>
+                            <li>Banhos aromáticos</li>
+                            <li>Day SPA</li>
+                            <li>Reflexologia</li>
+                        </ul>
+
                     </div>
-                </div>
-                <hr>
-                <div class="section-3-col">
-                    <img src="Imagens/logo-behouse.jpg" alt="" class="section-3-logo">
+                    <div class="btn-click">
+                        <a href="#" class="upper btn-bg-b">SAIBA MAIS</a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <div class="footer-center">
+        <div class="center">
             <p>Copyright © 2025 <a href="https://github.com/alvesmachado" target="_blank">Michael Douglas</a></p>
         </div>
     </footer>
+    <script>
+        function clickMenu() {
+            if (menu_itens.style.display == 'block') {
+                menu_itens.style.display = 'none'
+            } else {
+                menu_itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

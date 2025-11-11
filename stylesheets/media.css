@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 560px){
+    .section-3-content {
+        border-radius: 64px;
+    }
+}
+
+
+@media screen and (min-width: 992px){
+    nav {
+        display: none;
+    }
+    header {
+        position: relative;
+        z-index: 1;
+        width: 100vw;
+    }
+    .menu-button {
+        display: none;
+        cursor: pointer;
+    }
+    .section-1 {
+        background-image: url(../imagens/desktop/pexels-anete-lusina-5240836.jpg);
+        height: calc(100vh - 56px);
+    }
+
+    .section-2 {
+        background-image: url(../imagens/desktop/pexels-anntarazevich-6560289.jpg);
+    }
+
+    .section-3 {
+        background-image: url(../imagens/desktop/pexels-elly-fairytale-3865802.jpg);
+    }
+    .section-3-content {
+        border-radius: 64px;
+    }
+    .section-2-content {
+        max-width: 992px;
+    }
+
+    .section-2-content p{
+        max-width: 968px;
+    }
+}

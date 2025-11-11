@@ -1,0 +1,339 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-purple: #bc71ff;
+    --color-purple-dark: #9b4fdd;
+    --color-red: #e25557;
+    --color-blue-light: #ABE3FF;
+    --color-blue: #0396FD;
+    --color-blue-dark: #0169CA;
+    --color-white: rgb(255, 255, 255);
+    --color-white-dark: rgb(223, 223, 223);
+    --color-grey: #888A85;
+    --font-archivo: "Archivo", sans-serif;;
+    --color-black-bg: #0F0F0F;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font-archivo);
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-grey);
+}
+
+/* Mobile First */
+
+/* Header */
+
+header {
+    display: flex;
+    height: 56px;
+    background-color: var(--color-black-bg);
+    padding: 8px 0px 8px 0px;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+}
+
+.menu-button{
+    color: var(--color-white);
+    font-size: 32px;
+    padding: 4px 0px 4px 16px;
+    height: 40px;
+}
+
+.header-right{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    padding-left: 16px;
+}
+
+.header-logo img{
+    height: 40px;
+}
+
+.header-logo a:hover > img{
+    transition: 0.2s;
+    transform: scale(0.950);
+}
+
+.header-logo a:active > img{
+    transition: 0.2s;
+    transform: scale(0.900);
+}
+
+.header-agendar {
+    padding-right: 16px;
+    padding: 10px 16px;
+}
+
+.header-agendar a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color-white);
+    font-size: 20px;
+    padding: 9px 8px;
+    background-color: var(--color-blue-dark);
+    border-radius: 10px;
+}
+
+nav {
+    background-color: rgb(8 8 8 / 86%);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+    display: none; /**/
+}
+
+.menu_m {
+    background-color: #1a1a1a;
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+}
+
+
+.header-top-menu {
+    display: flex;
+    height: 56px;
+    padding: 8px 0px 8px 0px;
+    margin-bottom: 16px;
+
+}
+
+.list-menu-m {
+    list-style-type: none;
+    font-size: 24px;
+    position: absolute;
+    left: 80px;
+    transform: translateX(-25%);
+}
+
+.list-menu-m li{
+    padding: 10px 0px;
+}
+
+.menu-m-op {
+    font-weight: bold;
+}
+
+.list-menu-m i{
+    height: 21px;
+    margin-right: 16px;
+}
+
+.list-menu-m a{
+    color: var(--color-white-dark);
+    text-decoration: none;
+    display: flex;
+}
+
+.list-menu-m a:hover{
+    color: var(--color-white);
+
+}
+
+.list-menu-m a:hover p{
+    text-decoration: underline;
+}
+/* Classes Gerais */
+
+.bg-dark {
+    background-color: rgb(8 8 8 / 86%);
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.btn-bg-b{
+    color: var(--color-white);
+    background-color: var(--color-blue-dark);
+    font-size: 16px;
+    padding: 16px 8px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-click:hover {
+    transition: 0.2s;
+    transform: scale(0.975);
+}
+
+.btn-click:active {
+    transition: 0.2s;
+    transform: scale(0.950);
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.center-bot {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+/* Section 1 */
+
+.section-1 {
+    background-image: url(../imagens/mobile/pexels-anntarazevich-6560304.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 100vh;
+    min-height: 768px;
+}
+
+.section-1-content {
+    width: calc(100vw - 24px);
+    text-align: center;
+    
+}
+
+.section-1-content h1{
+    color: var(--color-white);
+    padding-bottom: 8px;
+    font-size: 28px;
+}
+
+.section-1-content h2{
+    color: var(--color-red);
+    font-size: 16px;
+    padding-bottom: 40px;
+}
+
+/* Section 2 */
+
+.section-2 {
+    background-image: url(../imagens/mobile/pexels-elly-fairytale-3865773.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+    height: 100vh;
+    min-height: 768px;
+}
+
+.section-2-content {
+    border-top-left-radius: 64px;
+    border-top-right-radius: 64px;
+    padding-top: 48px;
+    height: 320px;
+    width: 100vw;
+    text-align: center;
+    background-color: var(--color-white);
+}
+
+
+
+.section-2-content h1{
+    color: var(--color-black-bg);
+    padding-bottom: 8px;
+    font-size: 28px;
+}
+
+.section-2-content p{
+    color: var(--color-black-bg);
+    font-size: 16px;
+    padding-bottom: 40px;
+    width: calc(100vw - 24px);
+}
+
+
+/* Section 3 */
+
+.section-3 {
+    background-image: url(../imagens/mobile/pexels-elly-fairytale-3865799.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+    height: 100vh;
+    min-height: 768px;
+}
+
+.section-3-content {
+    padding-top: 48px;
+    width: 100vw;
+    max-width: 600px;
+    height: 360px;
+    text-align: center;
+    background-color: rgb(255 255 255 / 7%);
+}
+
+.section-3-categorias {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.section-3-content  h1{
+    color: var(--color-purple-dark);
+}
+
+.section-3-content  h2{
+    color: var(--color-purple);
+    margin-bottom: 10px;
+}
+
+.section-3-categorias ul{
+    margin-top: 10px;
+    list-style-type: none;
+    max-width: 165px;
+}
+
+.section-3-categorias li{
+    margin-top: 4px;
+    color: white;
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    height: 40px;
+    background-color: var(--color-black-bg);
+    color: var(--color-white);
+}
+
+footer div {
+    width: 275px;
+    text-align: center;
+}
+
+footer a {
+    font-weight: bold;
+    color: var(--color-purple);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--color-red);
+}
+
+footer a:active {
+    color: var(--color-blue);
+}
