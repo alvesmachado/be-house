@@ -89,7 +89,7 @@ header {
     border-radius: 10px;
 }
 
-nav {
+#menu_itens {
     background-color: rgb(8 8 8 / 86%);
     width: 100vw;
     height: 100vh;
@@ -149,6 +149,46 @@ nav {
 .list-menu-m a:hover p{
     text-decoration: underline;
 }
+
+.list-menu-nav { 
+        display: none;
+    }
+
+.list-menu {
+    list-style-type: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-black-bg);
+}
+
+.list-menu li{
+    padding: 10px 0px;
+}
+
+
+.list-menu i{
+    height: 21px;
+    margin-right: 16px;
+    display: none;
+}
+
+.list-menu a{
+    margin: 0px 10px;
+    color: var(--color-white-dark);
+    text-decoration: none;
+    display: flex;
+}
+
+.list-menu a:hover{
+    color: var(--color-white);
+
+}
+
+.list-menu a:hover p{
+    text-decoration: underline;
+}
+
 /* Classes Gerais */
 
 .bg-dark {

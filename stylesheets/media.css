@@ -8,7 +8,10 @@
 
 
 @media screen and (min-width: 992px){
-    nav {
+    .list-menu-nav { 
+        display: block;
+    }
+    #menu_itens {
         display: none;
     }
     header {
